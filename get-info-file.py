@@ -25,7 +25,7 @@ st_ctime==> Time of most recent meta data change
 
 import os 
 
-stats = os.stat('axx.txt')
+stats = os.stat('dummy-file.txt')
 print(stats)
 
 
@@ -43,7 +43,7 @@ date and time.
 import os 
 import datetime
 
-stats = os.stat('axx.txt')
+stats = os.stat('dummy-file.txt')
 print('file size in bytes : ', stats.st_size)
 print('files last accessed time : ', datetime.datetime.fromtimestamp(stats.st_atime))
 print('files last or recent modified time : ', datetime.datetime.fromtimestamp(stats.st_mtime))
